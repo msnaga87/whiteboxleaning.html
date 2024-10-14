@@ -1,0 +1,125 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    min-width: 125vh;
+    width: 120%;
+    background-color: #fff;
+    /* position: relative; */
+}
+.whitebox-wrapper{
+    padding: 10% 15% ;
+}
+.whitebox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+h1{
+    /* color: black; */
+    font-size: 8px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    /* box-sizing: border-box; */
+    /* width: min-content 25%;
+    width:max-content 45%; */
+    /* position: 25px 15px 25px 15px; */
+    text-align: center;
+    flex:content;
+    flex-flow: column;
+    align-items: flex-end;
+
+} 
+p{
+    color: darkgrey;
+    font-size: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: relative;
+    display: flex;
+
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 55px;
+}
+.card{
+    /* height: 150px; 
+    width: 150px;  */
+    padding: 3% 5%;
+    transition: none;
+    /* display: flex; */
+    /* align-items: center; */
+    flex-direction: column;
+
+} 
+.card i{
+    padding: left;
+    margin-left: auto;
+    font-size: 1.5rem;
+    background: padding-box;
+    box-shadow: rgb(rgb(3, 69, 157), green, blue);
+    transform: translate3d(.3px);
+    background-color: rgb(151, 216, 234);
+    margin-top: 2px;
+  
+}
+
+.card:hover i{ 
+    /* box-shadow: rgb(rgb(135, 227, 241) 0% 2%  3%);
+    background-color: rgba (rgb(blue 0% 2%  3%));
+    transform: skewX(.3px); */ 
+    
+   
+
+
+} 
+.card h2{
+    color: black;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+    bottom: 20px;
+    height: 20px;
+    padding-top: 5px;
+    align-items:;
+    
+}
+.card p{
+    color: darkgray;
+    font-size: 8px;
+    height: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 5px;
+    padding-block: 15px;
+   
+    margin: 10%;
+}
+.card:hover i {
+    /* box-shadow: rgb(from color r g b); */
+    /* background-color: rgb(9, 105, 169); */
+    /* transform: translateX(.5px); */
+    /* background-color: rgb(166, 219, 236); */
+    transform: translateY(-8px);
+    
+}
+@media screen and (max-width:1000px) {
+    .cards{
+        grid-template-columns: repeat(2,lfr);
+    }
+}@media screen and (max-width:800px) {
+    .cards{
+        grid-template-columns: repeat(1,lfr);
+    }
+    h1{
+        font-size: 3.0rem;
+    }
+}
+
+ 
+
+
